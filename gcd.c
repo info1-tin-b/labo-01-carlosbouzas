@@ -32,17 +32,17 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    int a = atoi(argv[1]); // Affectation de la premiere valeur numérique
-                           // entrée en ligne de commande 
+    int a = atoi(argv[1]); // Affectation de la premiere valeur sous forme de caractère
+                           // convertie en valeur numérique entrée en ligne de commande 
 
-    int b = atoi(argv[2]); // Affectation de la deuxième valeur numérique
-                           // entrée en ligne de commande 
-
-    int result = gcd(a, b);// Affectation de la valeur de retour de la fonction   
-
-    //printf("%d\n", result + 5);
-    printf("%d\n", result);// Affichage du résultat
-
+    int b = atoi(argv[2]);// Affectation de la deuxième valeur sous forme de caractère
+                          // convertie en valeur numérique
+                          // entrée en ligne de commande 
+    if ((a%b)==0){
+      int result = gcd(a, b);// Affectation de la valeur de retour de la fonction   
+      printf("%d\n", result);// Affichage du résultat
+    }else
+      printf("No results for this case.. \n");
     return 0;
 }
 
